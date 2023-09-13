@@ -1,0 +1,34 @@
+<div
+  style="
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Bem vindo à calculadora de IMC</mat-card-title>
+      <mat-card-subtitle>Digite seus dados para calcular</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <div style="padding-top: 16px">
+        <mat-form-field style="width: 100%">
+          <mat-label>Altura</mat-label>
+          <input matInput type="number" [(ngModel)]="altura" />
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field style="width: 100%">
+          <mat-label>Peso</mat-label>
+          <input matInput type="number" [(ngModel)]="peso" />
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button mat-raised-button color="primary" (click)="calcularImc()">
+        Calcular
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

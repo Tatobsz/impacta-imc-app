@@ -18,7 +18,7 @@ export class CalculadoraImcComponent {
 
       alert(
         `Com IMC de ${imc.toFixed(
-          2
+          1
         )}, você está na categoria ${ImcChainStarter.startChain().obterTipo(
           imc
         )}.`
